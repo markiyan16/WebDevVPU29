@@ -1,0 +1,94 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Шапка */
+header {
+    background-color: #4CAF50;
+    color: white;
+    padding: 15px 20px;
+    width: 100%;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+}
+
+nav a:hover {
+    color: #FFEB3B;
+}
+
+main {
+    width: 90%;
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+/* Стилі для секцій */
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Зображення піци */
+.pizza-info {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.pizza-info img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+/* Форма замовлення */
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #388E3C;
+}
+
+/* Підвал */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+}

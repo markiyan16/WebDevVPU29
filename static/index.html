@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Піца "Чотири сири"</title>
+    <link rel="stylesheet" href="styles.css"> <!-- Підключення CSS -->
+</head>
+<body>
+
+    <header>
+        <h1>Піца "Чотири сири"</h1>
+        <nav>
+            <a href="#about">Про піцу</a>
+            <a href="#ingredients">Інгредієнти</a>
+            <a href="#order">Замовлення</a>
+        </nav>
+    </header>
+
+    <main>
+        <section id="about">
+            <div class="pizza-info">
+                <img src="images/four_cheese_pizza.png" alt="Піца Чотири Сири">
+                <div>
+                    <h2>Найсирніша піца у світі</h2>
+                    <p>Піца "Чотири сири" — справжній рай для сирних гурманів. Вона поєднує чотири різні сорти сиру, створюючи неповторний вершковий смак.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="ingredients">
+            <h3>Інгредієнти</h3>
+            <ul>
+                <li>Тісто</li>
+                <li>Томатний соус</li>
+                <li>Сир моцарела</li>
+                <li>Сир пармезан</li>
+                <li>Сир горгонзола</li>
+                <li>Сир емменталь</li>
+                <li>Оливкова олія</li>
+                <li>Орегано</li>
+            </ul>
+        </section>
+
+        <section id="order">
+            <h3>Замовлення</h3>
+            <form>
+                <label for="name">Ваше ім'я:</label>
+                <input type="text" id="name" required>
+
+                <label for="phone">Номер телефону:</label>
+                <input type="tel" id="phone" required>
+
+                <label for="address">Адреса доставки:</label>
+                <textarea id="address" required></textarea>
+
+                <button type="submit">Замовити</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Піца "Чотири сири". Усі права захищені.</p>
+    </footer>
+
+</body>
+</html>
