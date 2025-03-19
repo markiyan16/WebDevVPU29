@@ -3,13 +3,124 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Піца "Чотири сири"</title>
-    <link rel="stylesheet" href="styles.css"> <!-- Підключення CSS -->
+    <title>Піца Чотири Сири</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: url('https://media.istockphoto.com/id/468515806/uk/%D1%84%D0%BE%D1%82%D0%BE/%D0%BF%D1%96%D1%86%D0%B0.jpg?s=612x612&w=0&k=20&c=M-51tn6ry6r2ogT4QoKCEtK9twvGUf9c7HndCv8qcco=') no-repeat center center/cover;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 20px;
+        }
+
+        .pizza-container {
+            display: flex;
+            justify-content: center;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .image-section, .description-section {
+            flex: 1;
+            padding: 10px;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        .description-section {
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            color: black;
+        }
+
+        h2 {
+            color: #4CAF50;
+            font-size: 32px;
+        }
+
+        .description-section p {
+            font-size: 20px;
+            line-height: 1.6;
+        }
+
+        section {
+            margin: 20px 0;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            color: black;
+        }
+
+        label {
+            display: block;
+            margin: 10px 0;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        button:hover {
+            background-color: #388E3C;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            margin-top: auto;
+        }
+    </style>
 </head>
 <body>
-
     <header>
-        <h1>Піца "Чотири сири"</h1>
+        <h1>Піца Чотири Сири</h1>
         <nav>
             <a href="#about">Про піцу</a>
             <a href="#ingredients">Інгредієнти</a>
@@ -17,42 +128,42 @@
         </nav>
     </header>
 
+    <div class="hero">
+        <h1>Смачна піца "Чотири сири"!</h1>
+        <p>Спробуйте унікальне поєднання чотирьох видів сиру, що розтануть у вашому роті!</p>
+    </div>
+
     <main>
-        <section id="about">
-            <div class="pizza-info">
-                <img src="images/four_cheese_pizza.png" alt="Піца Чотири Сири">
-                <div>
-                    <h2>Найсирніша піца у світі</h2>
-                    <p>Піца "Чотири сири" — справжній рай для сирних гурманів. Вона поєднує чотири різні сорти сиру, створюючи неповторний вершковий смак.</p>
-                </div>
+        <div class="pizza-container">
+            <div class="image-section">
+                <img src="https://www.example.com/four-cheese-pizza.jpg" alt="Піца Чотири Сири">
             </div>
-        </section>
+            <div class="description-section">
+                <h2>Чому ця піца особлива?</h2>
+                <p>Піца "Чотири сири" – це вишукане поєднання моцарели, пармезану, горгонзоли та емменталя. Її ніжна текстура та насичений сирний смак роблять її улюбленою серед гурманів.</p>
+            </div>
+        </div>
 
         <section id="ingredients">
-            <h3>Інгредієнти</h3>
+            <h2>Інгредієнти</h2>
             <ul>
                 <li>Тісто</li>
                 <li>Томатний соус</li>
-                <li>Сир моцарела</li>
-                <li>Сир пармезан</li>
-                <li>Сир горгонзола</li>
-                <li>Сир емменталь</li>
-                <li>Оливкова олія</li>
-                <li>Орегано</li>
+                <li>Моцарела</li>
+                <li>Пармезан</li>
+                <li>Горгонзола</li>
+                <li>Емменталь</li>
             </ul>
         </section>
 
         <section id="order">
-            <h3>Замовлення</h3>
+            <h2>Замовлення</h2>
             <form>
-                <label for="name">Ваше ім'я:</label>
-                <input type="text" id="name" required>
+                <label for="name">Ім'я:</label>
+                <input type="text" id="name" name="name" required>
 
-                <label for="phone">Номер телефону:</label>
-                <input type="tel" id="phone" required>
-
-                <label for="address">Адреса доставки:</label>
-                <textarea id="address" required></textarea>
+                <label for="address">Адреса:</label>
+                <input type="text" id="address" name="address" required>
 
                 <button type="submit">Замовити</button>
             </form>
@@ -60,8 +171,7 @@
     </main>
 
     <footer>
-        <p>&copy; 2024 Піца "Чотири сири". Усі права захищені.</p>
+        <p>&copy; 2025 Піца Чотири Сири. Усі права захищені.</p>
     </footer>
-
 </body>
 </html>
